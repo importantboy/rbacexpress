@@ -3,7 +3,7 @@ import express from "express";
 import { router } from "./routes/postRoute.js";
 import cookieParser from "cookie-parser";
 import cors from "cors";
-import { router as employeeRouter } from "./routes/getEmployeesRoute.js";
+import { router as employeeRouter } from "./routes/getRoute.js";
 const app = express();
 app.use(express.json());
 app.use(cookieParser());
