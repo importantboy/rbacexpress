@@ -1,0 +1,34 @@
+1.create modal employee - [done]
+----------------Auth-------------------------------
+2.create jwt auth for employee/admin/manager - [done]
+3.create jwt vaildation middleware - [done]
+4.admin can register new employee/manager - [done]
+5.manager can register new employee - [done]
+------------------Get-------------------------------
+6.get all employees from admin side manager/employee - [done] 
+7.manager can view employee data - [done]
+8.employee can view their data only - [done]
+  a.get single employee - [done]
+----------------Update------------------------------
+9.update employee from admin/manager side - []
+---------------delete--------------------------------
+10.only admin can delete the data of mananger / employee - []
+-----------------get employee by department--------------
+11.get all the employees by department 
+12.add the department.
+13.upate and delete department.
+
+
+----------endpoints--------------------
+| Method | Route                | Access                 | Description                                   |
+| ------ | -------------------- | ---------------------- | --------------------------------------------- |
+| POST   | /api/auth/register   | Admin                  | Create new user/employee                      |  ok
+| POST   | /api/auth/login      | All                    | Login & get JWT token                         |  ok
+| GET    | /api/employees       | Manager/Admin          | List all employees (with pagination + filter) |  ok
+| GET    | /api/employees/:id   | Manager/Admin/Employee | Get employee details                          |  ok
+| PUT    | /api/employees/:id   | Manager/Admin          | Update employee details                       |
+| DELETE | /api/employees/:id   | Admin                  | Delete employee                               |
+| GET    | /api/departments     | All                    | List departments                              |
+| POST   | /api/departments     | Admin                  | Create department                             |
+| PUT    | /api/departments/:id | Admin                  | Update department                             |
+| DELETE | /api/departments/:id | Admin                  | Delete department                             |
