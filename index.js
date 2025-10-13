@@ -26,7 +26,7 @@ async function main() {
   // authenticate the admin
   app.use("/api/auth/", router);
   // get all the employees from admin side
-  app.use('/api/' , employeeRouter);
+  app.use('/api/employees/' , employeeRouter);
   app.use('/api/employees/update' , updateRouter);
   
   app.listen(4000, () => console.log(`server is listening on port ${4000}`));

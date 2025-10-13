@@ -10,7 +10,7 @@
 8.employee can view their data only - [done]
   a.get single employee - [done]
 ----------------Update------------------------------
-9.update employee from admin/manager side - []
+9.update employee from admin/manager side - [done]
 ---------------delete--------------------------------
 10.only admin can delete the data of mananger / employee - []
 -----------------get employee by department--------------

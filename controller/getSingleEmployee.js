@@ -6,8 +6,6 @@ export const singleEmployee  = async(req , res) => {
      console.log(role);
         if(!id) return res.json(jsonData(401 , false , 'cannot find data' , null));
      try{
-        //     employee !== Admin = true && employee !== manager = true (true)
-        //     Admin !== Admin = false && Admin !== manager = true (false) 
           if((role !== "Admin" && role !== "Manager")){
                return res.json(jsonData(406 , false ,  'unauthorized user' , null));
           }  else {

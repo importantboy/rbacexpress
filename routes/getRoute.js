@@ -6,5 +6,5 @@ import { jsonData, prisma } from "../index.js";
 
 export const router = express.Router();
 
-router.get("/employee", authMiddleware, getAllEmployees);
+router.get("/", authMiddleware, getAllEmployees);
 router.get('/employee/:id' , authMiddleware , singleEmployee);
