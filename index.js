@@ -5,6 +5,7 @@ import cookieParser from "cookie-parser";
 import cors from "cors";
 import { router as employeeRouter } from "./routes/getRoute.js";
 import { router as updateRouter } from "./routes/updateRoute.js";
+import { router as deleteRoute } from "./routes/deleteRoute.js";
 const app = express();
 app.use(express.json());
 app.use(cookieParser());
@@ -28,6 +29,8 @@ async function main() {
   // get all the employees from admin side
   app.use('/api/employees/' , employeeRouter);
   app.use('/api/employees/update' , updateRouter);
+  //delete route
+  app.use('/api/employees/delete/' , deleteRoute );
   
   app.listen(4000, () => console.log(`server is listening on port ${4000}`));
 }

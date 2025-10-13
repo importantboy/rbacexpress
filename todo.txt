@@ -26,7 +26,7 @@
 | POST   | /api/auth/login      | All                    | Login & get JWT token                         |  ok
 | GET    | /api/employees       | Manager/Admin          | List all employees (with pagination + filter) |  ok
 | GET    | /api/employees/:id   | Manager/Admin/Employee | Get employee details                          |  ok
-| PUT    | /api/employees/:id   | Manager/Admin          | Update employee details                       |
+| PUT    | /api/employees/:id   | Manager/Admin          | Update employee details                       |  ok
 | DELETE | /api/employees/:id   | Admin                  | Delete employee                               |
 | GET    | /api/departments     | All                    | List departments                              |
 | POST   | /api/departments     | Admin                  | Create department                             |
