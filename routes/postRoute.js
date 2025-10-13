@@ -7,7 +7,7 @@ import { authMiddleware } from '../middleware/auth.js';
 
 export const router = express.Router();
 
+//register new employee or manager through admin
 router.post('/register' , authMiddleware , register);
 router.post('/login' , login);
-//register new employee or manager through admin
 
